@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json.schemastore.org/tsconfig",
+    "extends": "./node_modules/@rushstack/heft-node-rig/profiles/default/tsconfig-base.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./src",
+        "rootDirs": ["./src"],
+        "types": ["heft-jest", "node"],
+
+        // from https://github.com/tsconfig/bases/blob/main/bases/node18.json
+        "lib": ["ES2022"],
+        "target": "ES2022",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "moduleResolution": "node",
+
+        // extra checks
+        "noImplicitReturns": true,
+        "noUnusedLocals": true
+    },
+    "include": ["./src/**/*.ts"]
+}

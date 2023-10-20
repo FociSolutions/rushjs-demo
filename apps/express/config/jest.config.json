@@ -1,0 +1,5 @@
+{
+    "extends": "@rushstack/heft-jest-plugin/includes/jest-shared.config.json",
+    "testMatch": ["<rootDir>/src/__tests__/**/*.ts"],
+    "setupFiles": ["<rootDir>/config/setupJest.js"]
+}

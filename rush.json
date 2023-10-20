@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.109.1",
+  "pnpmVersion": "7.33.5",
+  "nodeSupportedVersionRange": ">=14.15.0 <15.0.0 || >=16.13.0 <17.0.0 || >=18.15.0 <19.0.0",
+  "nodeSupportedVersionInstructions": "Run 'nvs use' to switch to the expected node version.",
+  "ensureConsistentVersions": true,
+  "projectFolderMinDepth": 2,
+  "projectFolderMaxDepth": 2,
+  "allowMostlyStandardPackageNames": true,
+  "gitPolicy": {},
+  "repository": {
+    "url": "https://github.com/FociSolutions/rushjs-demo.git",
+    "defaultBranch": "main",
+    "defaultRemote": "origin"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "variants": [],
+  "allowedProjectTags": [],
+  "projects": [
+    {
+      "packageName": "@demo-rushjs/express",
+      "projectFolder": "apps/express",
+      "versionPolicyName": "demo-rushjs"
+    },
+    {
+      "packageName": "@demo-rushjs/sample-package",
+      "projectFolder": "packages/sample-package",
+      "versionPolicyName": "demo-rushjs"
+    }
+  ]
+}
